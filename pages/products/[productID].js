@@ -1,3 +1,4 @@
+
 import { useRouter } from 'next/router';    // hooks into router
 
 const productDetail = () => {
@@ -5,6 +6,7 @@ const productDetail = () => {
     const id = router.query.productID  // productID = [productID] in file
     return (
         <div>
+         
             <h1> Details of the product {id} </h1>
         </div>
     );

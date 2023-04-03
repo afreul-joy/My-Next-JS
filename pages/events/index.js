@@ -1,6 +1,6 @@
 import React from 'react';
 
-const index = () => {
+const eventList = () => {
     return (
         <div>
             this is event page broooo yooo
@@ -8,4 +8,4 @@ const index = () => {
     );
 };
 
-export default index;
+export default eventList;

@@ -1,16 +1,19 @@
-import React from 'react';
+import React from "react";
+import Link from "next/link";
 
-const productList = () => {
-    return (
-        <div>
-            <ul>
-                <li> <a href='products/'>Product-01</a> </li>
-                <li> <a href='pd2'>Product-02</a> </li>
-                <li> <a href='pd3'>Product-03</a> </li>
-              
-            </ul>
-        </div>
-    );
+const productList = ({ productID = 100 }) => {
+  return (
+    <div>
+      <Link href="/">Go-Home</Link>
+      <br />
+      <br />
+      <Link href="/products/1"> product-01</Link>
+      <br />
+      <Link href="/products/2"> product-02</Link>
+      <br />
+      <Link href={`/products/${productID}`}> Dynamic Id: {productID} </Link>
+    </div>
+  );
 };
 
 export default productList;
